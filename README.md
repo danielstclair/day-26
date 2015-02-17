@@ -1,2 +1,2 @@
-# day-26
-first assignment using angular
+# angular-template
+A basic starting template for angular apps.

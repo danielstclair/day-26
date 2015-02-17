@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+	</head>
+	<body>
+
+		<!-- <div>
+				<tabset heading="Tab 1" ng-controller="tabViews" ng-show="firstTab"></tabset>
+		</div> -->
+		<!-- <ul>
+				<li class="pure-button"
+						ng-class="{'pure-button-active': activeTab === 'signup'}"
+						ng-click="switchTabTo('signup')">
+						Sign Up
+				</li>
+				<li class="pure-button"
+						ng-class="{'pure-button-active': activeTab === 'login'}"
+						ng-click="switchTabTo('login')">
+						Log in
+				</li>
+		</ul> -->
+		<!-- <div ng-app="TabsApp">
+			<div id="tabs" ng-controller="TabsCtrl">
+				<ul>
+					<li ng-repeat="tab in tabs"
+						ng-class="{active:isActiveTab(tab.url)}"
+					ng-click="onClickTab(tab)">{{tab.title}}</li>
+				</ul>
+				<div id="mainView">
+					<div ng-include="currentTab"></div>
+				</div>
+			</div>
+			<script type="text/ng-template" id="one.tpl.html">
+			<div id="viewOne">
+				<h1>View One</h1>
+				<p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc.</p>
+			</div>
+			</script>
+			
+			<script type="text/ng-template" id="two.tpl.html">
+				<div id="viewTwo">
+						<h1>View Two</h1>
+						<p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu.</p>
+				</div>
+			</script>
+			
+			<script type="text/ng-template" id="three.tpl.html">
+				<div id="viewThree">
+						<h1>View Three</h1>
+						<p>In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu.</p>
+				</div>
+			</script>
+		</div> -->
+		<div ng-controller="TabsCtrl">
+			<div class="nav" ng-click="showFirst()">One</div>
+			<div class="nav" ng-click="showSecond()">Two</div>
+			<div class="nav" ng-click="showThird()">Three</div>
+
+			<div class="tab-content" ng-show="showFirstTab">
+				<h1>One</h1>
+				<p>Fap migas blog bicycle rights, vinyl literally tattooed crucifix. Dreamcatcher PBR&B fap pop-up lumbersexual. DIY Thundercats polaroid cray whatever Williamsburg, fap meh tofu trust fund McSweeney's. Godard cold-pressed leggings migas four dollar toast Intelligentsia keffiyeh, pork belly tattooed Kickstarter ennui master cleanse Vice small batch farm-to-table. Hoodie Thundercats Vice fingerstache, lo-fi church-key bespoke post-ironic mumblecore Blue Bottle YOLO asymmetrical messenger bag +1. Pug Tumblr post-ironic, fingerstache bespoke beard XOXO taxidermy farm-to-table artisan retro direct trade High Life. Meh meggings banjo Thundercats polaroid.</p>
+			</div>
+			<div class="tab-content" ng-show="showSecondTab">
+				<h1>Two</h1>
+				<p>Selvage quinoa literally Neutra post-ironic. Butcher banjo fap, Wes Anderson street art Etsy master cleanse art party deep v. Kogi Portland Banksy, Etsy mumblecore Neutra raw denim PBR&B food truck next level iPhone four loko Vice. Small batch selvage Vice brunch. Brooklyn 3 wolf moon plaid Pitchfork. Cronut authentic biodiesel pork belly wayfarers, typewriter taxidermy locavore. Typewriter yr VHS, Austin gentrify farm-to-table fixie artisan mustache direct trade.</p>
+			</div>
+			<div class="tab-content" ng-show="showThirdTab">
+				<h1>Three</h1>
+				<p>FFour dollar toast McSweeney's before they sold out Thundercats sriracha, leggings shabby chic synth 90's High Life tilde distillery fanny pack narwhal dreamcatcher. Four dollar toast migas meditation keytar semiotics cardigan tofu, selvage hashtag. Keffiyeh DIY ugh craft beer semiotics. Tofu letterpress heirloom, next level umami Echo Park DIY. Thundercats XOXO lumbersexual mixtape. Jean shorts salvia heirloom, VHS quinoa hashtag Etsy vegan yr hoodie Wes Anderson leggings YOLO seitan. Sartorial +1 kale chips shabby chic, Vice kitsch photo booth you probably haven't heard of them Brooklyn.</p>
+			</div>
+		</div>
+
+
+		<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+		<script type="text/javascript" src="scripts/services.js"></script>
+		<script type="text/javascript" src="scripts/controllers.js"></script>
+		
+	</body>
+</html>
+
