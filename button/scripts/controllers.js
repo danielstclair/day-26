@@ -1,4 +1,4 @@
-app.controller('loadingButtonCtrl', function($scope){
+angular.module('app.controllers', []).controller('loadingButtonCtrl', function($scope){
 	$scope.buttonText = 'Click Me';
 	$scope.buttonDisabled = false;
 	$scope.startLoading = function(){
